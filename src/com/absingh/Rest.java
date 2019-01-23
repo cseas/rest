@@ -9,9 +9,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 
 public class Rest {
-
     public static void main(String[] args) throws IOException {
-
         try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
 
             HttpGet request = new HttpGet("http://services.groupkt.com/state/get/IND/GJ");
@@ -30,6 +28,6 @@ public class Rest {
             }
 
             System.out.println(builder);
-        }
-    }
-}
+        } // end try
+    } // end main
+} // end class Rest
