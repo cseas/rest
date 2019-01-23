@@ -14,7 +14,7 @@ public class Rest {
 
         try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
 
-            HttpGet request = new HttpGet("http://services.groupkt.com/state/get/IND/UP");
+            HttpGet request = new HttpGet("http://services.groupkt.com/state/get/IND/GJ");
             HttpResponse response = client.execute(request);
 
             BufferedReader bufReader = new BufferedReader(new InputStreamReader(
